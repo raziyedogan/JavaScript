@@ -37,7 +37,7 @@ filtreliUrunleriYazdir(filtreliUrunler);
 
 function filtreliUrunleriDondur(urunler){
     urunler.forEach(function(urun){
-        if(urun.isim.toUpperCase().includes(kullaniciUrunIsmi.toUpperCase(),0)){
+        if(urun.isim.toUpperCase().includes(kullaniciUrunIsmi.toUpperCase(),0)){ //includes metoduna verilen 0 parametresi ile 0.indisten itibaren tüm string içerisinde arama yapılması belirtilir.
             filtreliUrunler.push(urun);
         }
     });
